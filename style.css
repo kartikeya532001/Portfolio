@@ -96,8 +96,9 @@ nav .nav-links li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+
     padding: 0 5%;
-    padding-top: 80px; /* Offset for fixed nav */
+    padding-top: 120px; /* Offset for fixed nav */
 }
 
 .hero-container {
@@ -213,7 +214,7 @@ nav .nav-links li a:hover {
 
 /* Sections */
 section {
-    padding: 5rem 5%;
+    padding: 2rem 5%;
 }
 
 section h2 {
