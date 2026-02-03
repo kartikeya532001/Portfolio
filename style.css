@@ -843,4 +843,116 @@ section h2 {
     }
 }
 
+#certificates {
+    padding: 100px 10%;
+}
 
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.certificate-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-primary);
+    background: rgba(6, 182, 212, 0.05); /* subtle glow */
+}
+
+.cert-icon {
+    font-size: 2.5rem;
+    color: var(--accent-primary);
+}
+
+.cert-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.cert-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.cert-date {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--accent-primary);
+    margin-top: 0.5rem;
+}
+
+.cert-verify {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.certificate-card:hover .cert-verify {
+    opacity: 0.7;
+}
+
+.certificate-card:hover .cert-verify:hover {
+    opacity: 1;
+}
+
+#education {
+    padding: 60px 10%;
+}
+
+.academic-dot {
+    background: #a855f7 !important; /* Purple accent to differentiate from Experience */
+    box-shadow: 0 0 10px #a855f7;
+}
+
+.edu-details {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* Ensure the timeline lines connect if you place Education right after Experience */
+#experience, #education {
+    position: relative;
+}
+.specialization-badge {
+    display: inline-block;
+    background: rgba(168, 85, 247, 0.15); /* Soft purple to match academic-dot */
+    color: #e9d5ff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin: 10px 0;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.specialization-badge i {
+    margin-right: 8px;
+    color: #a855f7;
+}
+
+.edu-details {
+    color: #94a3b8;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
