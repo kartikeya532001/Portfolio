@@ -1255,3 +1255,30 @@ section h2 {
         flex-direction: row;
     }
 }
+
+.diagram-container-lostpets {
+    width: 100%;
+    align-content: center;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+
+/* Media Query for Laptops/Desktops */
+@media screen and (min-width: 1024px) {
+    .diagram-container-lostpets {
+        width: 200%; /* Reduce width so it doesn't look massive on big screens */
+        align-content: center;
+        margin-left: 3%;
+        margin-top: 2%;
+       
+    }
+}
+
+.img-caption-lostpets{
+    margin-top: 15px;
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.6;
+    text-align: center;
+}

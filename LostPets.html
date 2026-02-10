@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Pets | Project Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="detail-page">
+    <canvas id="bg"></canvas> 
+    
+    <nav>
+        <div class="logo">
+            <a href="index.html#projects" style="text-decoration: none; color: inherit;">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+        </div>
+    </nav>
+
+    <section class="project-detail-container">
+        <div class="glass-portfolio-card detail-card">
+            <div class="card-header">
+                <h1 class="gradient-text">Lost Pets: Cloud-Driven Recovery Platform</h1>
+                <p class="subtitle">A cloud-native solution for reuniting lost pets with their owners.</p>
+            </div>
+
+            <div class="card-body">
+                <div class="detail-grid">
+                    <div class="detail-text">
+                        <h3><i class="fas fa-lightbulb"></i> Project Summary</h3>
+                        <br />
+                        <p>Lost Pets is a community-driven web application designed to eliminate the anxiety of missing pets. The system utilizes unique ID tags (QR/Unique Alpha-numeric) assigned to pet collars. When a lost pet is found, the rescuer simply scans or enters the ID on our platform to instantly access owner contact details stored securely in our cloud database.</p>
+                        
+                        <div class="key-features">
+                            <div class="feature"><i class="fas fa-id-badge"></i> Unique Pet-ID Integration</div><br />
+                            <div class="feature"><i class="fas fa-database"></i> Secure Postgres Management</div> <br />
+                            <div class="feature"><i class="fas fa-vial"></i> Selenium Automated UI Testing</div>
+                        </div>
+                    </div>
+
+                    <div class="detail-stack">
+                        <h3>Tech Stack</h3>
+                        <div class="tags">
+                            <span>GCP</span><span>Jenkins CI</span><span>Compute Engine</span>
+                            <span>Postgres DB</span><span>Prometheus</span><span>Grafana</span>
+                            <span>Selenium</span><span>Docker</span><span>Github</span><span>ReactJS</span><span>NodeJS</span>
+                        </div>
+    
+                        <div class="project-links-box">
+                            <a href="https://github.com/kartikeya532001/LostPet" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <!-- <a href="#" target="_blank" class="btn btn-linkedin">
+                                <i class="fab fa-linkedin"></i> Project Demo
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="separator">
+
+                <div class="architecture-section">
+                    <h3><i class="fas fa-sitemap"></i> Architecture Overview</h3>
+                    <br />
+                    <p>The system follows a modern full-stack architecture featuring a dynamic <strong>React</strong> frontend and a high-performance <strong>Node.js</strong> backend. Hosted on <strong>GCP Compute Engine</strong>, the application leverages a <strong>Postgres</strong> database to maintain high-integrity mapping between unique pet IDs and owner contact records. The entire deployment lifecycle is managed by an <strong>Jenkins CI/CD</strong> server, which automates the transition from code commit to production while executing <strong>Selenium</strong> suites to ensure platform reliability.</p>
+                    <div class="flow-container">
+                        <div class="flow-column">
+                            <h4><i class="fas fa-sync"></i> Jenkins Pipeline</h4>
+                            <ul>
+                                <li><strong>SCM:</strong> Polls GitHub for new commits.</li>
+                                <li><strong>Build:</strong> Containerizes the application using Docker.</li>
+                                <li><strong>Test:</strong> Executes Selenium scripts for end-to-end UI verification.</li>
+                            </ul>
+                        </div>
+                        <div class="flow-column">
+                            <h4><i class="fas fa-cloud"></i> Google Cloud Platform</h4>
+                            <ul>
+                                <li><strong>Compute:</strong> High-availability VMs running Dockerized services.</li>
+                                <li><strong>Data:</strong> Managed Postgres instance for pet-owner mapping.</li>
+                                <li><strong>Monitor:</strong> Real-time logging and performance tracking.</li>
+                            </ul>
+                        </div>
+                        <div class="diagram-container-lostpets">
+                            <img src="lostpets.png" alt="LostPets Architecture Diagram" class="architecture-img">
+                            <p class="img-caption-lostpets">High-Level End-to-End CI/CD & GCP Workflow</p>
+                        </div>
+                    </div>
+
+                    <div class="principles-section">
+                        <h3 class="section-title-sm">Operational Excellence</h3>
+                        <div class="principles-grid">
+                            <div class="principle-card">
+                                <i class="fas fa-microscope"></i>
+                                <div class="principle-info">
+                                    <strong>Automated QA</strong>
+                                    <p>Using Selenium to ensure the critical ID search functionality never breaks during updates.</p>
+                                </div>
+                            </div>
+                            <div class="principle-card">
+                                <i class="fas fa-chart-line"></i>
+                                <div class="principle-info">
+                                    <strong>Real-time Telemetry</strong>
+                                    <p>Prometheus & Grafana stack monitoring request latency and database health.</p>
+                                </div>
+                            </div>
+                            <div class="principle-card">
+                                <i class="fas fa-shield-cat"></i>
+                                <div class="principle-info">
+                                    <strong>Data Integrity</strong>
+                                    <p>Ensuring pet-owner sensitive data is encrypted and highly available via Postgres.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="separator">
+
+                <div class="dual-section">
+                    <div class="monitoring">
+                        <h3><i class="fas fa-flask"></i> Testing Strategy</h3>
+                        <br />
+                        <p>To maintain platform trust, we implemented <strong>Selenium WebDriver</strong> for automated UI testing. This ensures that the "Find My Owner" journey is functional across all browser types before Jenkins promotes a build to production.</p>
+                    </div>
+
+                    <div class="monitoring">
+                        <h3><i class="fas fa-tachometer-alt"></i> Metrics & Observability</h3>
+                        <br /> 
+                        <ul class="obs-list">
+                            <li><i class="fas fa-check-circle"></i> <strong>Prometheus:</strong> Tracking API response codes and uptime.</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Grafana:</strong> Custom dashboards for pet-recovery success rates.</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Jenkins Logs:</strong> Auditing build history and failure root-causes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="margin-top: -5%;">
+        <h2>Let's <span class="accent">Connect</span></h2>
+        <div class="contact-box">
+            <p>Passionate about leveraging Cloud for social good? Reach out!</p>
+            <div class="contact-buttons">
+                <a href="mailto:kartikeya532001@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
+                <a href="https://github.com/kartikeya532001" class="btn btn-secondary" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/kartikeya-khanna-1274b7194/" class="btn btn-secondary" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/three@0.134.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
